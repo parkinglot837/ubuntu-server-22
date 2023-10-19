@@ -1,6 +1,6 @@
 ## Resizing a partition and ubuntu linux filesystem
 ## vgdisplay
-```
+~~~
 ubadmin@server5:~$ sudo vgdisplay
   --- Volume group ---
   VG Name               ubuntu-vg
@@ -22,7 +22,7 @@ ubadmin@server5:~$ sudo vgdisplay
   Alloc PE / Size       4863 / <19.00 GiB
   Free  PE / Size       4864 / 19.00 GiB
   VG UUID               NbEjjH-rmtr-c1yI-hfBi-inkg-6nzI-cwPJLk
-```
+~~~
 ubadmin@server5:~$
 ubadmin@server5:~$
 ubadmin@server5:~$ sudo lvdisplay
