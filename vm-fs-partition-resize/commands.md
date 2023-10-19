@@ -1,6 +1,6 @@
-### Resizing a partition, lv and ubuntu linux filesystem
-### cfdisk
-
+# Resizing a partition, lv and ubuntu linux filesystem
+## cfdisk
+show cfdisk image
 
 
 ## vgdisplay
