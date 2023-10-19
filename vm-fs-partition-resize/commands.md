@@ -224,6 +224,32 @@ ubadmin@devtools:~$ sudo vgdisplay
   Free  PE / Size       0 / 0
   VG UUID               NbEjjH-rmtr-c1yI-hfBi-inkg-6nzI-cwPJLk
 
+
+ubadmin@devtools:~$ df -h
+Filesystem                         Size  Used Avail Use% Mounted on
+tmpfs                              794M  8.4M  785M   2% /run
+/dev/mapper/ubuntu--vg-ubuntu--lv   38G   18G   19G  49% /
+tmpfs                              3.9G   52K  3.9G   1% /dev/shm
+tmpfs                              5.0M     0  5.0M   0% /run/lock
+/dev/sda2                          2.0G  404M  1.4G  23% /boot
+tmpfs                              794M  4.0K  794M   1% /run/user/1000
+ubadmin@devtools:~$
+ubadmin@devtools:~$
+ubadmin@devtools:~$ sudo resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
+resize2fs 1.46.5 (30-Dec-2021)
+Filesystem at /dev/mapper/ubuntu--vg-ubuntu--lv is mounted on /; on-line resizing required
+old_desc_blocks = 5, new_desc_blocks = 10
+The filesystem on /dev/mapper/ubuntu--vg-ubuntu--lv is now 20446208 (4k) blocks long.
+
+ubadmin@devtools:~$ df -h
+Filesystem                         Size  Used Avail Use% Mounted on
+tmpfs                              794M  8.4M  785M   2% /run
+/dev/mapper/ubuntu--vg-ubuntu--lv   77G   18G   57G  24% /
+tmpfs                              3.9G   52K  3.9G   1% /dev/shm
+tmpfs                              5.0M     0  5.0M   0% /run/lock
+/dev/sda2                          2.0G  404M  1.4G  23% /boot
+tmpfs                              794M  4.0K  794M   1% /run/user/1000
+ubadmin@devtools:~$
 ~~~
 
 
