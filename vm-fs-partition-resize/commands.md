@@ -3,7 +3,7 @@
 show cfdisk image
 
 
-## vgdisplay
+### vgdisplay
 ~~~
 ubadmin@server5:~$ sudo vgdisplay
   --- Volume group ---
@@ -78,7 +78,7 @@ ubadmin@server5:~$
 ~~~
 
 ## Resize the filesystem
-## resize2fs
+### resize2fs
 ~~~
 ubadmin@server5:~$ df -h
 Filesystem                         Size  Used Avail Use% Mounted on
