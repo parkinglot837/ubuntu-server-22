@@ -29,6 +29,9 @@ ubadmin@server5:~$ sudo vgdisplay
 
 ubadmin@server5:~$
 ubadmin@server5:~$
+~~~
+## lvdisplay
+~~~
 ubadmin@server5:~$ sudo lvdisplay
   --- Logical volume ---
   LV Path                /dev/ubuntu-vg/ubuntu-lv
@@ -72,6 +75,8 @@ ubadmin@server5:~$ sudo lvdisplay
 
 ubadmin@server5:~$
 ubadmin@server5:~$
+~~~
+
 ## Resize the filesystem
 ## resize2fs
 ~~~
