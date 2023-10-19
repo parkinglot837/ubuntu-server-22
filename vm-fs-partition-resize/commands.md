@@ -1,4 +1,8 @@
-## Resizing a partition and ubuntu linux filesystem
+### Resizing a partition, lv and ubuntu linux filesystem
+### cfdisk
+
+
+
 ## vgdisplay
 ~~~
 ubadmin@server5:~$ sudo vgdisplay
@@ -22,7 +26,7 @@ ubadmin@server5:~$ sudo vgdisplay
   Alloc PE / Size       4863 / <19.00 GiB
   Free  PE / Size       4864 / 19.00 GiB
   VG UUID               NbEjjH-rmtr-c1yI-hfBi-inkg-6nzI-cwPJLk
-~~~
+
 ubadmin@server5:~$
 ubadmin@server5:~$
 ubadmin@server5:~$ sudo lvdisplay
@@ -68,6 +72,9 @@ ubadmin@server5:~$ sudo lvdisplay
 
 ubadmin@server5:~$
 ubadmin@server5:~$
+## Resize the filesystem
+## resize2fs
+~~~
 ubadmin@server5:~$ df -h
 Filesystem                         Size  Used Avail Use% Mounted on
 tmpfs                              794M  1.2M  793M   1% /run
@@ -91,4 +98,6 @@ tmpfs                              5.0M     0  5.0M   0% /run/lock
 /dev/sda2                          2.0G  527M  1.3G  29% /boot
 tmpfs                              794M  4.0K  794M   1% /run/user/1000
 ubadmin@server5:~$
+
+~~~
 ![image](https://github.com/parkinglot837/ubuntu-server-22/assets/8241838/84abf61f-1467-4312-84af-867d04e346aa)
