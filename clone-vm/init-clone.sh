@@ -21,13 +21,13 @@ echo "New Machine-ID: ${newmachid}"
 # Remove and regenerate the ssh host keys
 echo " "
 echo "Generate new SSH keys"
-sudo rm /etc/ssh/ssh_host*
-sudo rm /etc/ssh/ssh_host*.pub
+sudo rm -f /etc/ssh/ssh_host*
+sudo rm -f /etc/ssh/ssh_host*.pub
 sudo dpkg-reconfigure openssh-server
 
 echo " "
 echo "-----------------------------------"
-ls - /etc/ssh/ | grep ssh_host
+ls -l /etc/ssh/ | grep ssh_host
 echo "-----------------------------------"
 echo " "
 echo " "
@@ -40,6 +40,7 @@ echo " "
 echo "Press 'C' to proceed if the hostname is correct."
 echo "OR Any other key to stop the initialization…"
 read -r -s -n 1 -p " :" key
+## Use this as a break point if there were errors from the above commands.
 
 if [ "$key" = 'C' ]; then
 	echo "Set the hostname: to ${myhstnm}"
@@ -59,4 +60,5 @@ else
     exit
 fi
 
+# Reference the script that will change the network settings.
 source /home/ubadmin/initialize/changenet.sh
