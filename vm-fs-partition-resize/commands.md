@@ -1,5 +1,5 @@
-Resizing a partition and ubuntu linux filesystem
-##vgdisplay
+## Resizing a partition and ubuntu linux filesystem
+## vgdisplay
 ubadmin@server5:~$ sudo vgdisplay
   --- Volume group ---
   VG Name               ubuntu-vg
